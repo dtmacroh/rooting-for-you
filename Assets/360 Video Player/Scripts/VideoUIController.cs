@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Video;
-
+using UnityEngine.SceneManagement;
 public class VideoUIController : MonoBehaviour {
 
     public VideoPlayer playerToControl;
@@ -19,14 +19,10 @@ public class VideoUIController : MonoBehaviour {
 
     public void TogglePause()
     {
-        if (playerToControl.isPlaying)
-        {
-            playerToControl.Pause();
-        }
-        else
-        {
-            playerToControl.Play();
-        }
+        
+       SceneManager.LoadScene("wasteland");
+        playerToControl.Pause();
+
     }
 
     public void ToggleMute()
