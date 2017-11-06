@@ -9,11 +9,19 @@ public class VideoUIController : MonoBehaviour {
 
     private AudioSource audioSource;
     private float oldVolume = 1.0f;
+    private Dictionary<string,string> refer;
 
     private void Start()
     {
         audioSource= playerToControl.gameObject.GetComponent<AudioSource>();
         oldVolume = audioSource.volume;
+        refer = new Dictionary<string, string>();
+        refer.Add("fire", "classroom");
+        refer.Add("classroom", "onboarding");
+        refer.Add("onboarding", "fortmacroad");
+        refer.Add("fortmacroad", "plantingsimulator");
+
+
     }
 
 
