@@ -1,0 +1,309 @@
+{
+  "accessors": [
+    {
+      "bufferView": 2,
+      "componentType": 5126,
+      "count": 15396,
+      "max": [
+        96.361419677734375,
+        22.225746154785156,
+        42.524559020996094
+      ],
+      "min": [
+        -93.094802856445312,
+        -21.715934753417969,
+        -47.338359832763672
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 184752,
+      "componentType": 5126,
+      "count": 15396,
+      "max": [
+        0.99977457523345947,
+        0.99997842311859131,
+        0.99824661016464233
+      ],
+      "min": [
+        -0.99981391429901123,
+        -0.99998641014099121,
+        -0.99957942962646484
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 1,
+      "componentType": 5126,
+      "count": 15396,
+      "max": [
+        0.99467206001281738,
+        0.99160534143447876
+      ],
+      "min": [
+        0.016151051968336105,
+        0.0030529461801052094
+      ],
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 3,
+      "componentType": 5126,
+      "count": 15396,
+      "max": [
+        0.99999749660491943,
+        0.99964737892150879,
+        0.99984383583068848,
+        1
+      ],
+      "min": [
+        -0.9999890923500061,
+        -0.99988222122192383,
+        -0.99999260902404785,
+        -1
+      ],
+      "type": "VEC4"
+    },
+    {
+      "bufferView": 0,
+      "componentType": 5125,
+      "count": 87528,
+      "max": [
+        15395
+      ],
+      "min": [
+        0
+      ],
+      "type": "SCALAR"
+    }
+  ],
+  "asset": {
+    "generator": "Sketchfab (OSG glTF plugin)",
+    "version": "2.0"
+  },
+  "bufferViews": [
+    {
+      "buffer": 0,
+      "byteLength": 350112,
+      "byteOffset": 0,
+      "name": "ScalarBufferView",
+      "target": 34963
+    },
+    {
+      "buffer": 0,
+      "byteLength": 123168,
+      "byteOffset": 350112,
+      "byteStride": 8,
+      "name": "Vec3BufferView",
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteLength": 369504,
+      "byteOffset": 473280,
+      "byteStride": 12,
+      "name": "Vec4BufferView",
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteLength": 246336,
+      "byteOffset": 842784,
+      "byteStride": 16,
+      "name": "MatrixBufferView",
+      "target": 34962
+    }
+  ],
+  "buffers": [
+    {
+      "byteLength": 1089120,
+      "uri": "scene.bin"
+    }
+  ],
+  "images": [
+    {
+      "uri": "textures/Default%20Material_emissive.png"
+    },
+    {
+      "uri": "textures/Default%20Material_metallicRoughness.png"
+    },
+    {
+      "uri": "textures/Default%20Material_normal.png"
+    },
+    {
+      "uri": "textures/Default%20Material_baseColor.png"
+    }
+  ],
+  "materials": [
+    {
+      "doubleSided": true,
+      "emissiveFactor": [
+        0.62690548779999999,
+        0.62690548779999999,
+        0.62690548779999999
+      ],
+      "emissiveTexture": {
+        "index": 0,
+        "texCoord": 0
+      },
+      "name": "Default Material",
+      "normalTexture": {
+        "index": 2,
+        "scale": 1,
+        "texCoord": 0
+      },
+      "occlusionTexture": {
+        "index": 1,
+        "strength": 1,
+        "texCoord": 0
+      },
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "baseColorTexture": {
+          "index": 3,
+          "texCoord": 0
+        },
+        "metallicFactor": 0.84317835370000005,
+        "roughnessFactor": 0.52877286589999994
+      }
+    }
+  ],
+  "meshes": [
+    {
+      "name": "mesh-retopo new 1",
+      "primitives": [
+        {
+          "attributes": {
+            "NORMAL": 1,
+            "POSITION": 0,
+            "TANGENT": 3,
+            "TEXCOORD_0": 2
+          },
+          "indices": 4,
+          "material": 0,
+          "mode": 4
+        }
+      ]
+    }
+  ],
+  "nodes": [
+    {
+      "children": [
+        1
+      ],
+      "name": "RootNode (gltf orientation matrix)",
+      "rotation": [
+        -0.70710678118654746,
+        -0,
+        -0,
+        0.70710678118654757
+      ]
+    },
+    {
+      "children": [
+        2
+      ],
+      "name": "RootNode (model correction matrix)"
+    },
+    {
+      "children": [
+        3
+      ],
+      "matrix": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        -1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      "name": "2800a9cf95b34cfe813f3f9c7ae1fcdd.fbx"
+    },
+    {
+      "children": [
+        4
+      ],
+      "name": "RootNode"
+    },
+    {
+      "children": [
+        5
+      ],
+      "matrix": [
+        0.39370077848434448,
+        0,
+        0,
+        0,
+        0,
+        0.39370077848434409,
+        1.7209208296473247e-08,
+        0,
+        0,
+        -1.7209208296473247e-08,
+        0.39370077848434409,
+        0,
+        -0.70343703031539917,
+        0,
+        0,
+        1
+      ],
+      "name": "mesh-retopo new 1"
+    },
+    {
+      "mesh": 0,
+      "name": "mesh-retopo new 1"
+    }
+  ],
+  "samplers": [
+    {
+      "magFilter": 9729,
+      "minFilter": 9987,
+      "wrapS": 10497,
+      "wrapT": 10497
+    }
+  ],
+  "scene": 0,
+  "scenes": [
+    {
+      "name": "OSG_Scene",
+      "nodes": [
+        0
+      ]
+    }
+  ],
+  "textures": [
+    {
+      "sampler": 0,
+      "source": 0
+    },
+    {
+      "sampler": 0,
+      "source": 1
+    },
+    {
+      "sampler": 0,
+      "source": 2
+    },
+    {
+      "sampler": 0,
+      "source": 3
+    }
+  ]
+}
+

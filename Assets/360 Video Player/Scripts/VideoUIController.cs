@@ -15,23 +15,58 @@ public class VideoUIController : MonoBehaviour {
     {
         audioSource= playerToControl.gameObject.GetComponent<AudioSource>();
         oldVolume = audioSource.volume;
-        refer = new Dictionary<string, string>();
-        refer.Add("fire", "classroom");
-        refer.Add("classroom", "onboarding");
-        refer.Add("onboarding", "fortmacroad");
-        refer.Add("fortmacroad", "plantingsimulator");
+       
 
 
     }
-
-
-    public void TogglePause()
+   
+    public void goToPlanting()
     {
-        
-       SceneManager.LoadScene("wasteland");
+        Debug.Log("the end is near");
+        SceneManager.LoadScene("plantingsimulation");
+        playerToControl.Pause();
+    }
+
+    public void goToClassroom()
+    {
+        SceneManager.LoadScene("classroom");
         playerToControl.Pause();
 
     }
+    public void goToFire()
+    {
+        SceneManager.LoadScene("fire");
+        playerToControl.Pause();
+
+    }
+
+    public void goToOnboarding()
+    {
+        SceneManager.LoadScene("fortmacroad");
+        playerToControl.Pause();
+
+    }
+
+    public void goToForest()
+    {
+        SceneManager.LoadScene("forest");
+        playerToControl.Pause();
+
+    }
+    public void goToWasteland()
+    {
+        SceneManager.LoadScene("wasteland");
+        playerToControl.Pause();
+
+    }
+    public void TogglePause()
+    {
+        
+      // SceneManager.LoadScene("wasteland");
+        playerToControl.Pause();
+
+    }
+    
 
     public void ToggleMute()
     {
