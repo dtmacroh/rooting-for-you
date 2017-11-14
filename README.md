@@ -1,8 +1,8 @@
 
-##Part 1
+## Part 1
 1. Once package is downloaded, drag unitypackage into your Unity Editor (2017).
 
-##Part2
+## Part2
 
 A tree planting simulation project that has NetworkIt combined with 360 Video and Google Cardboard. Requires Unity 2017 or higher.
 
@@ -33,7 +33,7 @@ The library for NetworkItUnity is the same. Refer to the [NetworkItUnity](https:
 * [Unity-Technologies/SkyboxPanoramicShader](https://github.com/Unity-Technologies/SkyboxPanoramicShader)
 * [kevinta893/Unity360Video](https://github.com/kevinta893/Unity360Video)
 
-##Part 3
+## Part 3
 1. In the Assets folder, open up the Scenes folder.
 2. Double click the fire scene and hit play. This is the first scene of the project.
 3. In the Build Settings, check the open scenes and make sure the first scene is the fire scene. (noted by a "0" on the right hand side of panel)
@@ -42,11 +42,5 @@ The library for NetworkItUnity is the same. Refer to the [NetworkItUnity](https:
 	Make sure you have a data cable attached from your laptop to your phone, 
 	and that USB Debugging is available on your phone. 
 	
-//End of Part 3//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-
-
-
-
-//end of Part 3////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 
