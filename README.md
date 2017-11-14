@@ -1,26 +1,58 @@
 
-//The first part of this readme is derived from: https://github.com/kevinta893/Unity360Video
-//Part 1/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-Unity Skybox 360 Video Player
+//Part 1////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-A very basic 360 video implementation and demo. Uses a SkyBox rendering technique. Compatiable with Unity 2017 only.
+1. Once package is downloaded, drag unitypackage into your Unity Editor (2017).
 
-Uses the Skybox Panoramic shader by Unity-Technologies
+//end of Part 1///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-(Old Sphere Method) 360 Video Player in Unity, By: DominiqueLrx https://forum.unity3d.com/threads/playing-360-videos-with-the-videoplayer.461290/
+//The bulk of this part of the readme is derived from: https://github.com/kevinta893/Unity360Video
+//Part 2/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-Sample 360 Videos by: https://www.mettle.com/360vr-master-series-free-360-downloads-page/
 
-How to use
+A tree planting simulation project that has NetworkIt combined with 360 Video and Google Cardboard. Requires Unity 2017 or higher.
 
-To use, simply use the Main Camera prefab which has the Video Texture for the 360 Skybox made for you.
+## How to Use
+Some setup is required when you import this project. 
 
-See MainCamera/360 Video Player gameobject to change the video being played
-See Rendering/360VideoRenderTexture.renderTexture file to change the resolution of the video file to be played. This render texture must match the video's resolution.
-Troubleshooting:
+To change the 360 video, see notes from: [kevinta893/Unity360Video](https://github.com/kevinta893/Unity360Video)
 
-If you don't see anything in the windows preview, make sure your graphics card supports the correct DirectX API. Otherwise use only DX9 in the Unity editor
-//End of Part 1////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+### Project setup
+To run all three pieces together, you will need to setup your *Player Settings* (PC, Android, iOS):
+* All platforms:
+  * Other Settings > Api Compatibility Level = **.NET 2.0**
+  * XR Settings > Virtual Reality Supported = **Checked**, and add Cardboard to the list
 
+* Android:
+  * Other Settings > Minimum API Level = **Android 4.4 (API level 19)**
+
+### Prefabs
+Use the following Prefabs to add 360+Cardboard functionality to your projects
+* **Cardboard360Camera** - A prefab that adds a 360 Video player and GVR reticle. You can change your video here.
+* **GvrTriggerObject** - A prefab that has an EventTrigger component for the GVR reticle. Use this to add GVR Clickable objects.
+
+### NetworkItUnity
+The library for NetworkItUnity is the same. Refer to the [NetworkItUnity](https://github.com/kevinta893/NetworkIt/tree/master/NetworkItUnity) folder for more information on how to use.
+
+## Libraries Used
+* [googlevr/gvr-unity-sdk (v1.100.1)](https://github.com/googlevr/gvr-unity-sdk)
+* [Unity-Technologies/SkyboxPanoramicShader](https://github.com/Unity-Technologies/SkyboxPanoramicShader)
+* [kevinta893/Unity360Video](https://github.com/kevinta893/Unity360Video)
+
+//End of Part 2////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//Part 3///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+1. In the Assets folder, open up the Scenes folder.
+2. Double click the fire scene and hit play. This is the first scene of the project.
+3. In the Build Settings, check the open scenes and make sure the first scene is the fire scene. (noted by a "0" on the right hand side of panel)
+	Make sure all the scenes in the scene folder are in the build settings.
+4. To run on your phone, Go to File > Build Settings > Build and Run. 
+	Make sure you have a data cable attached from your laptop to your phone, 
+	and that USB Debugging is available on your phone. 
+	
+//End of Part 3//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+
+//end of Part 3////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 
