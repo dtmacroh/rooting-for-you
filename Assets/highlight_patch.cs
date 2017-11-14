@@ -16,7 +16,11 @@ public class highlight_patch : MonoBehaviour {
     public AudioSource src;
     public AudioClip shovelAdvice;
     public AudioClip treeAdvice;
+    public AudioClip stickAdvice;
     public AudioClip selectPatch;
+    public AudioClip wateringCanSound;
+    public AudioClip shovelSound;
+    public AudioClip generalSound;
     public bool spotChosen;
 
     public VideoPlayer playerToControl;
@@ -55,6 +59,8 @@ public class highlight_patch : MonoBehaviour {
 
     public void shovelChosen()
     {
+        src.clip = shovelSound;
+        src.Play();
         shovel = true;
         order++;
         if (shovel)
@@ -66,6 +72,8 @@ public class highlight_patch : MonoBehaviour {
     }
     public void treeChosen()
     {
+        src.clip = generalSound;
+        src.Play();
         order++;
        tree = true;
 
@@ -82,6 +90,8 @@ public class highlight_patch : MonoBehaviour {
     }
     public void stickChosen()
     {
+        src.clip = generalSound;
+        src.Play();
         order++;
         stick = true;
 
@@ -91,12 +101,16 @@ public class highlight_patch : MonoBehaviour {
         {
             meshStick.enabled = true;
             gTree.transform.rotation = Quaternion.Euler(3.0f, -70.0f, -10.0f);
+            src.clip = stickAdvice;
+            src.Play();
         }
        
     }
     public void wateringCanChosen()
     {
         Debug.Log("wateringcan");
+        src.clip = wateringCanSound;
+        src.Play();
         order++;
         wateringcan = true;
   
@@ -116,14 +130,23 @@ public class highlight_patch : MonoBehaviour {
                 src.Play();
                 order = 0;
             }
+            else if (!tree)
+            {
+                src.clip = treeAdvice;
+                src.Play();
+                order = 0;
+            }
         }
     }
 
     public void patchChosen()
     {
-        src.clip = selectPatch;
-        src.Play();
-        spotChosen = true;
+        if (!spotChosen)
+        {
+            src.clip = selectPatch;
+            src.Play();
+            spotChosen = true;
+        }
         Renderer meshStick = GameObject.Find("stick").GetComponent<Renderer>();
         Renderer meshTree = GameObject.Find("tree_on_ground").GetComponent<Renderer>();
         Renderer meshShovel1 = GameObject.Find("Cube").GetComponent<Renderer>();
@@ -148,6 +171,7 @@ public class highlight_patch : MonoBehaviour {
         }
 
     }
+  
 //    public void GoNearer()
 //    {
 //        // this.transform.localScale += new Vector3(1.0f, 0.0f, 1.0f);

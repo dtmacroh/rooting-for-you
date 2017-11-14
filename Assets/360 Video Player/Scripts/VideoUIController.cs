@@ -80,4 +80,10 @@ public class VideoUIController : MonoBehaviour {
             audioSource.volume = oldVolume;
         }
     }
+    public void EndScene()
+    {
+        Application.Quit();
+
+    }
+   
 }

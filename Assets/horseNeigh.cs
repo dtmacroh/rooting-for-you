@@ -12,7 +12,7 @@ public class horseNeigh : MonoBehaviour {
         src = this.GetComponent<AudioSource>();
         // src.clip = whinny;
         //src.Play();
-        StartCoroutine(neigh());
+        //StartCoroutine(neigh());
         
     }
 
@@ -21,10 +21,8 @@ public class horseNeigh : MonoBehaviour {
     {
        
     }
-    IEnumerator neigh()
-    {
-        yield return new WaitForSeconds(29);
-        src.clip = whinny;
-        src.Play();
-    }
+    //IEnumerator neigh()
+    //{
+        
+    //}
 }
